@@ -1,0 +1,56 @@
+# ======================
+# Secrets / Environment
+# ======================
+.env
+.env.*
+!.env.example
+
+# ======================
+# Node / Frontend
+# ======================
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# Python / Backend
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.myenv/
+myenv/
+.env.venv
+
+# ======================
+# Docker
+# ======================
+# Docker images/containers/volumes are NOT files
+# (nothing specific needed here, but keep this section)
+
+# ======================
+# Database / Backups
+# ======================
+*.dump
+*.sql
+*.bak
+pgdata/
+postgres-data/
+
+# ======================
+# OS / Editor junk
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDEs
+# ======================
+.vscode/
+.idea/
+*.swp
