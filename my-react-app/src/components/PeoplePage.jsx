@@ -21,7 +21,8 @@ function getVisibleMovies(movies, start, count) {
 
 function PeoplePage() {
 
-  const {nconst} = useParams();
+  const {pid} = useParams();
+  console.log(pid)
   const [person, setPerson] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -32,7 +33,7 @@ function PeoplePage() {
   useEffect(() => {
       const controller = new AbortController();
   
-      getPerson(nconst, { signal: controller.signal })
+      getPerson(pid, { signal: controller.signal })
         .then(setPerson)
         .catch((err) => {
           if (err.name !== "AbortError") console.error(err);
@@ -40,7 +41,7 @@ function PeoplePage() {
         .finally(() => setLoading(false));
   
       return () => controller.abort();
-    }, [nconst]); //This means run useEffect when nconst changes
+    }, [pid]); //This means run useEffect when pid changes
 
   if (loading) return <div>Loading...</div>;
   if (!person) return <div>Person not found</div>;

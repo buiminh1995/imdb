@@ -5,13 +5,13 @@ import genericPersonPoster from '../assets/person-male.jpg'
 function PeopleCard(props) {
     return (
         <article className="movie-card">
-            <Link to={`/title/${props.tconst}`}>
+            <Link key={props.pid} to={`/people-page/${props.pid}`}>
                 <div className="card-image">
                     <img src={genericPersonPoster} alt="generic person poster" />
                 </div>
             </Link>
             <div className="card-body">
-                <Link to={`/title/${props.tconst}`} className="title">
+                <Link key={props.pid} to={`/people-page/${props.pid}`} className="title">
                     {props.primaryName}
                 </Link>
                 <div className="rating-row">

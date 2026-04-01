@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/search-result" element={<SearchResult />} />
         <Route path="/title/:tconst" element={<MoviePage />} />        
-        <Route path="/people-page/:nconst" element={<PeoplePage />} />
+        <Route path="/people-page/:pid" element={<PeoplePage />} />
         <Route path="/search" element={<SearchResult />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
