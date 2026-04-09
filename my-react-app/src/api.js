@@ -9,6 +9,7 @@ function buildUrl(path, params = {}) {
 }
 
 export async function getRecentMovies({ limit = 20, signal = undefined, timeout = 0 } = {}) {
+  console.log('testing testing')
   const url = buildUrl("/api/main", { limit });
   return fetchJson(url, { signal, timeout });
 }
