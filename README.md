@@ -1,7 +1,7 @@
 
 # IMDb Explorer
 
-A full-stack web application for browsing IMDb movie and people data. The application imports official IMDb datasets into PostgreSQL and provides a responsive interface for searching movies, actors, directors, and writers.
+A full-stack web application (link: http://152.42.208.7/) for browsing IMDb movie and people data. The application imports official IMDb datasets into PostgreSQL and provides a responsive interface for searching movies, actors, directors, and writers.
 
 The project demonstrates building and deploying a production-style web application using React, FastAPI, PostgreSQL, Docker, and Nginx.
 
