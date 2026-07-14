@@ -104,7 +104,3 @@ Deployment stack:
 * Advanced filtering
 * Pagination improvements
 * Elasticsearch/Meilisearch integration
-
----
-
-I would also recommend adding **3–5 screenshots** and a simple architecture diagram. Recruiters often spend less than a minute on a GitHub repository, and visuals make it much easier to understand what you've built.
